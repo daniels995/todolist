@@ -14,7 +14,7 @@ class Todo(db.Model):
     def __repr__(self):
         return "<Task %r>" % self.id
 
-
+#rotta per l'index
 @app.route("/", methods=["POST", "GET"])
 def index():
     if request.method == "POST":
