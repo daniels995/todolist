@@ -1,0 +1,75 @@
+/* Reset di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.content {
+    max-width: 800px; /* Limita la larghezza del contenuto */
+    margin: 20px auto; /* Centro del contenuto */
+    padding: 20px;
+    background: #fff; /* Sfondo bianco per il contenuto */
+    border-radius: 5px; /* Angoli arrotondati */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #5a5a5a; /* Colore per il titolo */
+}
+
+table {
+    width: 100%; /* Tabella a larghezza piena */
+    border-collapse: collapse; /* Unisce i bordi delle celle */
+    margin-bottom: 20px; /* Margine inferiore per la tabella */
+}
+
+th, td {
+    padding: 12px; /* Padding per le celle */
+    border: 1px solid #ddd; /* Bordi leggeri per le celle */
+    text-align: left; /* Testo allineato a sinistra */
+}
+
+th {
+    background-color: #f2f2f2; /* Sfondo chiaro per l'intestazione */
+    color: #333; /* Colore del testo per l'intestazione */
+}
+
+tr:hover {
+    background-color: #f5f5f5; /* Sfondo leggermente scuro al passaggio del mouse */
+}
+
+form {
+    display: flex; /* Usa flexbox per il layout del modulo */
+    justify-content: space-between; /* Spaziatura tra gli elementi del modulo */
+    margin-top: 20px; /* Margine superiore per il modulo */
+}
+
+input[type="text"] {
+    flex: 1; /* Espande il campo di input per occupare lo spazio disponibile */
+    padding: 10px; /* Padding per il campo di input */
+    border: 1px solid #ccc; /* Bordi per il campo di input */
+    border-radius: 4px; /* Angoli arrotondati per il campo di input */
+}
+
+input[type="submit"] {
+    background-color: #28a745; /* Colore di sfondo per il pulsante */
+    color: white; /* Colore del testo per il pulsante */
+    border: none; /* Nessun bordo per il pulsante */
+    padding: 10px 15px; /* Padding per il pulsante */
+    border-radius: 4px; /* Angoli arrotondati per il pulsante */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+}
+
+input[type="submit"]:hover {
+    background-color: #218838; /* Colore più scuro per il pulsante al passaggio del mouse */
+}

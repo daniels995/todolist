@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block head %}<h1>Tutorial con Flask</h1>{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>Tasks</h1>
+    {% if tasks|length < 1 %}
+    <h1>Non ci sono task al momento...</h1>
+    {% else %}
+    <table>
+        <tr>
+            <th>id_task</th>
+            <th>Task</th>
+            <th>Added</th>
+            <th>Actions</th>
+        </tr>
+        {% for task in tasks %}
+        <tr>
+            <td>{{ task.id }}</td>
+            <td>{{ task.content }}</td>
+            <td>{{ task.date.date() }}</td>
+            <td>
+                <a href="/delete/{{task.id}}">delete</a>
+                <br>
+                <a href="/update/{{task.id}}">update</a> 
+            </td>
+        </tr>
+        {% endfor %}
+        
+    </table>
+    {% endif %}
+    <form action="/" method="POST">
+        <input type="text" name="content" id="id_content" >
+        <input type="submit" value="Add Task" >
+    </form>
+</div>
+{% endblock body %}
